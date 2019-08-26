@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+  get 'static_pages/help'
   resources :microposts
   resources :users
   get 'welcome/index'
@@ -10,6 +12,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   Rails.application.routes.draw do
     
+  get 'static_pages/home'
+  get 'static_pages/help'
     resources :microposts
     resources :users
     resources :items
