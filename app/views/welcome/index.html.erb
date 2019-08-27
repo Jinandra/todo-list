@@ -1,4 +1,11 @@
+<% provide(:title, "Home") %>
 <h1>Hello, Rails!</h1>
+<div class="top-div">
 <%= link_to 'My Todo List', controller: 'items' %>
 <%= link_to 'Users List', controller: 'users' %>
 <%= link_to 'Micropost list', controller: 'microposts' %>
+</div>
+<div class="top-div">
+<a href="static_pages/home"> Static Home </a>
+<a href="static_pages/help"> Static Help </a>
+</div>
